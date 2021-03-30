@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+      <class name="hibernate.AdminBankFdDetails" table="fdbanknw">
+		<id name="bank_id" type="long" column="bankId" >
+			<generator class="increment"/>
+		</id>
+
+		<property name="bankName">
+			<column name="BANK_NAME" />
+		</property>
+				<property name="interestRate">
+			<column name="INTEREST_RATE" />
+		</property>
+		<property name="months">
+			<column name="No_OF_MONTHS" />
+		</property>
+		<property name="updatedOn">
+			<column name="UPDATED_ON" />
+		</property>
+		<property name="updatedBy">
+			<column name="UPDATED_BY" />
+		</property>
+		
+	</class> 
+ 
+  
+</hibernate-mapping>

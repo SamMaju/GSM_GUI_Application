@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+   <class name="hibernate.Contact" table="CONTACT1">
+	   <id name="phone_number" type="long" column="PHONE" >
+	   <generator class="assigned"/>
+	  </id>
+
+	  <property name="name">
+		 <column name="NAME" />
+	  </property>
+	  <property name="email">
+		<column name="EMAIL"/>
+	  </property>
+   </class>
+
+   <!-- <class name="hibernate.Add_bankInfo_Fd" table="book">
+		<id name="BANK_ID" type="long" column="id" >
+			<generator class="increment"/>
+		</id>
+
+		<property name="bankName">
+			<column name="BANK_NAME" />
+		</property>
+				<property name="interestRate">
+			<column name="INTEREST_RATE" />
+		</property>
+		<property name="updatedOn">
+			<column name="UPDATED_ON" />
+		</property>
+		<property name="updatedBy">
+			<column name="UPDATED_BY" />
+		</property>
+		
+	</class> -->
+ 
+   <!--<class name="roseindia.tutorial.hibernate.Insurance" table="insurance">
+		<id name="lngInsuranceId" type="long" column="ID" >
+			<generator class="increment"/>
+		</id>
+
+		<property name="insuranceName">
+			<column name="insurance_name" />
+		</property>
+		<property name="investementAmount">
+			<column name="invested_amount" />
+		</property>
+		<property name="investementDate">
+			<column name="investement_date" />
+		</property>
+	</class> -->
+
+
+
+</hibernate-mapping>

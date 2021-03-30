@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+      <class name="hibernate.AdminBankFdDetails" table="fdbanknw">
+		<id name="bank_id" type="long" column="BANKID" >
+			<generator class="assigned"/>
+		</id>
+
+		<property name="bankName">
+			<column name="BANKNAME" />
+		</property>
+				<property name="interestRate">
+			<column name="INTERESTRATE" />
+			</property>
+			<property name="months">
+			<column name="No_OF_MONTHS" />
+		</property>
+		
+		<property name="updatedDate">
+			<column name="UPDATEDON" />
+		</property>
+		<property name="UpdatedBy">
+			<column name="UPDATEDBY" />
+		</property>
+		
+	</class> 
+ 
+  
+</hibernate-mapping>
